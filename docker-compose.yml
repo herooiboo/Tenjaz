@@ -1,0 +1,48 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: tenjaz_app
+    volumes:
+      - .:/var/www
+    ports:
+      - "9000:9000"
+    networks:
+      - tenjaz
+
+  mysql:
+    image: mysql:8.0
+    container_name: tenjaz_mysql
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: tenjaz
+      MYSQL_USER: tenjaz
+      MYSQL_PASSWORD: tenjaz
+    volumes:
+      - dbdata:/var/lib/mysql
+    networks:
+      - tenjaz
+    ports:
+      - "3306:3306"
+
+  nginx:
+    image: nginx:latest
+    container_name: tenjaz_nginx
+    restart: unless-stopped
+    ports:
+      - "1010:80"
+    volumes:
+      - .:/var/www
+      - ./docker/nginx/nginx.conf:/etc/nginx/conf.d/default.conf
+    networks:
+      - tenjaz
+
+volumes:
+  dbdata:
+
+networks:
+  tenjaz:
