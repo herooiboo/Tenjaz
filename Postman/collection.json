@@ -1,0 +1,955 @@
+{
+	"info": {
+		"_postman_id": "b17e3d51-3c98-4f0c-ae82-eb64ce94e2c1",
+		"name": "Tenjaz App",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17396965"
+	},
+	"item": [
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{APP_URL}}{{APP_VERSION}}/users?page=1",
+							"host": [
+								"{{APP_URL}}{{APP_VERSION}}"
+							],
+							"path": [
+								"users"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "List Users",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{APP_URL}}{{APP_VERSION}}/users?page=1",
+									"host": [
+										"{{APP_URL}}{{APP_VERSION}}"
+									],
+									"path": [
+										"users"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.27.3"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.3.14"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 21 Dec 2024 17:28:42 GMT"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"data\": {\n        \"data\": [\n            {\n                \"id\": 1,\n                \"name\": \"Haskell Considine III\",\n                \"username\": \"trantow.joanne\",\n                \"avatar\": \"https://via.placeholder.com/200x200.png/00aa77?text=people+voluptatem\",\n                \"type\": \"Silver\",\n                \"is_active\": true\n            },\n            {\n                \"id\": 2,\n                \"name\": \"Melody Swift\",\n                \"username\": \"oschmidt\",\n                \"avatar\": \"https://via.placeholder.com/200x200.png/00eebb?text=people+ut\",\n                \"type\": \"Silver\",\n                \"is_active\": true\n            },\n            {\n                \"id\": 3,\n                \"name\": \"Angelica Heaney\",\n                \"username\": \"rogahn.jewell\",\n                \"avatar\": \"https://via.placeholder.com/200x200.png/00eedd?text=people+eaque\",\n                \"type\": \"Gold\",\n                \"is_active\": true\n            },\n            {\n                \"id\": 4,\n                \"name\": \"Lisandro Block\",\n                \"username\": \"shanahan.rebeka\",\n                \"avatar\": \"https://via.placeholder.com/200x200.png/001199?text=people+necessitatibus\",\n                \"type\": \"Normal\",\n                \"is_active\": true\n            },\n            {\n                \"id\": 5,\n                \"name\": \"Tiara Hessel\",\n                \"username\": \"tschmeler\",\n                \"avatar\": \"https://via.placeholder.com/200x200.png/00ee99?text=people+vero\",\n                \"type\": \"Normal\",\n                \"is_active\": true\n            },\n            {\n                \"id\": 6,\n                \"name\": \"Ebba Blick\",\n                \"username\": \"reichert.hermina\",\n                \"avatar\": \"https://via.placeholder.com/200x200.png/008888?text=people+aperiam\",\n                \"type\": \"Gold\",\n                \"is_active\": true\n            },\n            {\n                \"id\": 7,\n                \"name\": \"Myrl Vandervort\",\n                \"username\": \"ftremblay\",\n                \"avatar\": \"https://via.placeholder.com/200x200.png/0055ff?text=people+dolores\",\n                \"type\": \"Silver\",\n                \"is_active\": true\n            },\n            {\n                \"id\": 8,\n                \"name\": \"Elisa Stamm MD\",\n                \"username\": \"torphy.marques\",\n                \"avatar\": \"https://via.placeholder.com/200x200.png/001122?text=people+ut\",\n                \"type\": \"Normal\",\n                \"is_active\": true\n            },\n            {\n                \"id\": 9,\n                \"name\": \"Faustino Windler\",\n                \"username\": \"zena18\",\n                \"avatar\": \"https://via.placeholder.com/200x200.png/0000bb?text=people+dolorem\",\n                \"type\": \"Silver\",\n                \"is_active\": true\n            },\n            {\n                \"id\": 10,\n                \"name\": \"Elwin Spencer\",\n                \"username\": \"jewel.reynolds\",\n                \"avatar\": \"https://via.placeholder.com/200x200.png/00dd22?text=people+maxime\",\n                \"type\": \"Silver\",\n                \"is_active\": false\n            }\n        ],\n        \"links\": {\n            \"first\": \"http://localhost:1010/api/v1/users?page=1\",\n            \"last\": \"http://localhost:1010/api/v1/users?page=101\",\n            \"prev\": null,\n            \"next\": \"http://localhost:1010/api/v1/users?page=2\"\n        },\n        \"meta\": {\n            \"current_page\": 1,\n            \"from\": 1,\n            \"last_page\": 101,\n            \"links\": [\n                {\n                    \"url\": null,\n                    \"label\": \"&laquo; Previous\",\n                    \"active\": false\n                },\n                {\n                    \"url\": \"http://localhost:1010/api/v1/users?page=1\",\n                    \"label\": \"1\",\n                    \"active\": true\n                },\n                {\n                    \"url\": \"http://localhost:1010/api/v1/users?page=2\",\n                    \"label\": \"2\",\n                    \"active\": false\n                },\n                {\n                    \"url\": \"http://localhost:1010/api/v1/users?page=3\",\n                    \"label\": \"3\",\n                    \"active\": false\n                },\n                {\n                    \"url\": \"http://localhost:1010/api/v1/users?page=4\",\n                    \"label\": \"4\",\n                    \"active\": false\n                },\n                {\n                    \"url\": \"http://localhost:1010/api/v1/users?page=5\",\n                    \"label\": \"5\",\n                    \"active\": false\n                },\n                {\n                    \"url\": \"http://localhost:1010/api/v1/users?page=6\",\n                    \"label\": \"6\",\n                    \"active\": false\n                },\n                {\n                    \"url\": \"http://localhost:1010/api/v1/users?page=7\",\n                    \"label\": \"7\",\n                    \"active\": false\n                },\n                {\n                    \"url\": \"http://localhost:1010/api/v1/users?page=8\",\n                    \"label\": \"8\",\n                    \"active\": false\n                },\n                {\n                    \"url\": \"http://localhost:1010/api/v1/users?page=9\",\n                    \"label\": \"9\",\n                    \"active\": false\n                },\n                {\n                    \"url\": \"http://localhost:1010/api/v1/users?page=10\",\n                    \"label\": \"10\",\n                    \"active\": false\n                },\n                {\n                    \"url\": null,\n                    \"label\": \"...\",\n                    \"active\": false\n                },\n                {\n                    \"url\": \"http://localhost:1010/api/v1/users?page=100\",\n                    \"label\": \"100\",\n                    \"active\": false\n                },\n                {\n                    \"url\": \"http://localhost:1010/api/v1/users?page=101\",\n                    \"label\": \"101\",\n                    \"active\": false\n                },\n                {\n                    \"url\": \"http://localhost:1010/api/v1/users?page=2\",\n                    \"label\": \"Next &raquo;\",\n                    \"active\": false\n                }\n            ],\n            \"path\": \"http://localhost:1010/api/v1/users\",\n            \"per_page\": 10,\n            \"to\": 10,\n            \"total\": 1002\n        }\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Show",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{APP_URL}}{{APP_VERSION}}/users/1002",
+							"host": [
+								"{{APP_URL}}{{APP_VERSION}}"
+							],
+							"path": [
+								"users",
+								"1002"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"test\",\r\n    \"username\": \"test.user2\",\r\n    \"password\": \"test1234\",\r\n    \"type\": \"Gold\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{APP_URL}}{{APP_VERSION}}/users",
+							"host": [
+								"{{APP_URL}}{{APP_VERSION}}"
+							],
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Create User",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"test\",\r\n    \"username\": \"test.user2\",\r\n    \"password\": \"test1234\",\r\n    \"type\": \"Gold\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{APP_URL}}{{APP_VERSION}}/users",
+									"host": [
+										"{{APP_URL}}{{APP_VERSION}}"
+									],
+									"path": [
+										"users"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.27.3"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.3.14"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 21 Dec 2024 17:27:52 GMT"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"User created successfully\",\n    \"data\": {\n        \"id\": 1002,\n        \"name\": \"test\",\n        \"username\": \"test.user2\",\n        \"avatar\": null,\n        \"type\": \"Gold\",\n        \"is_active\": false\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"is_active\":false\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{APP_URL}}{{APP_VERSION}}/users/1002",
+							"host": [
+								"{{APP_URL}}{{APP_VERSION}}"
+							],
+							"path": [
+								"users",
+								"1002"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update User",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"is_active\":false\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{APP_URL}}{{APP_VERSION}}/users/1002",
+									"host": [
+										"{{APP_URL}}{{APP_VERSION}}"
+									],
+									"path": [
+										"users",
+										"1002"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.27.3"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.3.14"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 21 Dec 2024 17:39:13 GMT"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"User updated successfully\",\n    \"data\": {\n        \"id\": 1002,\n        \"name\": \"test\",\n        \"username\": \"test.user2\",\n        \"avatar\": null,\n        \"type\": \"Silver\",\n        \"is_active\": false\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"is_active\":false\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{APP_URL}}{{APP_VERSION}}/users/998",
+							"host": [
+								"{{APP_URL}}{{APP_VERSION}}"
+							],
+							"path": [
+								"users",
+								"998"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Delete User",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"is_active\":false\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{APP_URL}}{{APP_VERSION}}/users/998",
+									"host": [
+										"{{APP_URL}}{{APP_VERSION}}"
+									],
+									"path": [
+										"users",
+										"998"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.27.3"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.3.14"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 21 Dec 2024 17:43:51 GMT"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"User deleted successfully\",\n    \"data\": []\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Products",
+			"item": [
+				{
+					"name": "List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{APP_URL}}{{APP_VERSION}}/products?page=1",
+							"host": [
+								"{{APP_URL}}{{APP_VERSION}}"
+							],
+							"path": [
+								"products"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "List Users",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{APP_URL}}{{APP_VERSION}}/users?page=1",
+									"host": [
+										"{{APP_URL}}{{APP_VERSION}}"
+									],
+									"path": [
+										"users"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.27.3"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.3.14"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 21 Dec 2024 17:28:42 GMT"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"data\": {\n        \"data\": [\n            {\n                \"id\": 1,\n                \"name\": \"Haskell Considine III\",\n                \"username\": \"trantow.joanne\",\n                \"avatar\": \"https://via.placeholder.com/200x200.png/00aa77?text=people+voluptatem\",\n                \"type\": \"Silver\",\n                \"is_active\": true\n            },\n            {\n                \"id\": 2,\n                \"name\": \"Melody Swift\",\n                \"username\": \"oschmidt\",\n                \"avatar\": \"https://via.placeholder.com/200x200.png/00eebb?text=people+ut\",\n                \"type\": \"Silver\",\n                \"is_active\": true\n            },\n            {\n                \"id\": 3,\n                \"name\": \"Angelica Heaney\",\n                \"username\": \"rogahn.jewell\",\n                \"avatar\": \"https://via.placeholder.com/200x200.png/00eedd?text=people+eaque\",\n                \"type\": \"Gold\",\n                \"is_active\": true\n            },\n            {\n                \"id\": 4,\n                \"name\": \"Lisandro Block\",\n                \"username\": \"shanahan.rebeka\",\n                \"avatar\": \"https://via.placeholder.com/200x200.png/001199?text=people+necessitatibus\",\n                \"type\": \"Normal\",\n                \"is_active\": true\n            },\n            {\n                \"id\": 5,\n                \"name\": \"Tiara Hessel\",\n                \"username\": \"tschmeler\",\n                \"avatar\": \"https://via.placeholder.com/200x200.png/00ee99?text=people+vero\",\n                \"type\": \"Normal\",\n                \"is_active\": true\n            },\n            {\n                \"id\": 6,\n                \"name\": \"Ebba Blick\",\n                \"username\": \"reichert.hermina\",\n                \"avatar\": \"https://via.placeholder.com/200x200.png/008888?text=people+aperiam\",\n                \"type\": \"Gold\",\n                \"is_active\": true\n            },\n            {\n                \"id\": 7,\n                \"name\": \"Myrl Vandervort\",\n                \"username\": \"ftremblay\",\n                \"avatar\": \"https://via.placeholder.com/200x200.png/0055ff?text=people+dolores\",\n                \"type\": \"Silver\",\n                \"is_active\": true\n            },\n            {\n                \"id\": 8,\n                \"name\": \"Elisa Stamm MD\",\n                \"username\": \"torphy.marques\",\n                \"avatar\": \"https://via.placeholder.com/200x200.png/001122?text=people+ut\",\n                \"type\": \"Normal\",\n                \"is_active\": true\n            },\n            {\n                \"id\": 9,\n                \"name\": \"Faustino Windler\",\n                \"username\": \"zena18\",\n                \"avatar\": \"https://via.placeholder.com/200x200.png/0000bb?text=people+dolorem\",\n                \"type\": \"Silver\",\n                \"is_active\": true\n            },\n            {\n                \"id\": 10,\n                \"name\": \"Elwin Spencer\",\n                \"username\": \"jewel.reynolds\",\n                \"avatar\": \"https://via.placeholder.com/200x200.png/00dd22?text=people+maxime\",\n                \"type\": \"Silver\",\n                \"is_active\": false\n            }\n        ],\n        \"links\": {\n            \"first\": \"http://localhost:1010/api/v1/users?page=1\",\n            \"last\": \"http://localhost:1010/api/v1/users?page=101\",\n            \"prev\": null,\n            \"next\": \"http://localhost:1010/api/v1/users?page=2\"\n        },\n        \"meta\": {\n            \"current_page\": 1,\n            \"from\": 1,\n            \"last_page\": 101,\n            \"links\": [\n                {\n                    \"url\": null,\n                    \"label\": \"&laquo; Previous\",\n                    \"active\": false\n                },\n                {\n                    \"url\": \"http://localhost:1010/api/v1/users?page=1\",\n                    \"label\": \"1\",\n                    \"active\": true\n                },\n                {\n                    \"url\": \"http://localhost:1010/api/v1/users?page=2\",\n                    \"label\": \"2\",\n                    \"active\": false\n                },\n                {\n                    \"url\": \"http://localhost:1010/api/v1/users?page=3\",\n                    \"label\": \"3\",\n                    \"active\": false\n                },\n                {\n                    \"url\": \"http://localhost:1010/api/v1/users?page=4\",\n                    \"label\": \"4\",\n                    \"active\": false\n                },\n                {\n                    \"url\": \"http://localhost:1010/api/v1/users?page=5\",\n                    \"label\": \"5\",\n                    \"active\": false\n                },\n                {\n                    \"url\": \"http://localhost:1010/api/v1/users?page=6\",\n                    \"label\": \"6\",\n                    \"active\": false\n                },\n                {\n                    \"url\": \"http://localhost:1010/api/v1/users?page=7\",\n                    \"label\": \"7\",\n                    \"active\": false\n                },\n                {\n                    \"url\": \"http://localhost:1010/api/v1/users?page=8\",\n                    \"label\": \"8\",\n                    \"active\": false\n                },\n                {\n                    \"url\": \"http://localhost:1010/api/v1/users?page=9\",\n                    \"label\": \"9\",\n                    \"active\": false\n                },\n                {\n                    \"url\": \"http://localhost:1010/api/v1/users?page=10\",\n                    \"label\": \"10\",\n                    \"active\": false\n                },\n                {\n                    \"url\": null,\n                    \"label\": \"...\",\n                    \"active\": false\n                },\n                {\n                    \"url\": \"http://localhost:1010/api/v1/users?page=100\",\n                    \"label\": \"100\",\n                    \"active\": false\n                },\n                {\n                    \"url\": \"http://localhost:1010/api/v1/users?page=101\",\n                    \"label\": \"101\",\n                    \"active\": false\n                },\n                {\n                    \"url\": \"http://localhost:1010/api/v1/users?page=2\",\n                    \"label\": \"Next &raquo;\",\n                    \"active\": false\n                }\n            ],\n            \"path\": \"http://localhost:1010/api/v1/users\",\n            \"per_page\": 10,\n            \"to\": 10,\n            \"total\": 1002\n        }\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Show",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{APP_URL}}{{APP_VERSION}}/products/1",
+							"host": [
+								"{{APP_URL}}{{APP_VERSION}}"
+							],
+							"path": [
+								"products",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Show By Slug",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{APP_URL}}{{APP_VERSION}}/products/s/test-product",
+							"host": [
+								"{{APP_URL}}{{APP_VERSION}}"
+							],
+							"path": [
+								"products",
+								"s",
+								"test-product"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Test Product",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Test Product Description",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/G:/mockup.png"
+								},
+								{
+									"key": "price",
+									"value": "11.1",
+									"type": "text"
+								},
+								{
+									"key": "is_active",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{APP_URL}}{{APP_VERSION}}/products",
+							"host": [
+								"{{APP_URL}}{{APP_VERSION}}"
+							],
+							"path": [
+								"products"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Create User",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"test\",\r\n    \"username\": \"test.user2\",\r\n    \"password\": \"test1234\",\r\n    \"type\": \"Gold\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{APP_URL}}{{APP_VERSION}}/users",
+									"host": [
+										"{{APP_URL}}{{APP_VERSION}}"
+									],
+									"path": [
+										"users"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.27.3"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.3.14"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 21 Dec 2024 17:27:52 GMT"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"User created successfully\",\n    \"data\": {\n        \"id\": 1002,\n        \"name\": \"test\",\n        \"username\": \"test.user2\",\n        \"avatar\": null,\n        \"type\": \"Gold\",\n        \"is_active\": false\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"is_active\":false\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{APP_URL}}{{APP_VERSION}}/products/501",
+							"host": [
+								"{{APP_URL}}{{APP_VERSION}}"
+							],
+							"path": [
+								"products",
+								"501"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update User",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"is_active\":false\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{APP_URL}}{{APP_VERSION}}/users/1002",
+									"host": [
+										"{{APP_URL}}{{APP_VERSION}}"
+									],
+									"path": [
+										"users",
+										"1002"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.27.3"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.3.14"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 21 Dec 2024 17:39:13 GMT"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"User updated successfully\",\n    \"data\": {\n        \"id\": 1002,\n        \"name\": \"test\",\n        \"username\": \"test.user2\",\n        \"avatar\": null,\n        \"type\": \"Silver\",\n        \"is_active\": false\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"is_active\":false\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{APP_URL}}{{APP_VERSION}}/products/998",
+							"host": [
+								"{{APP_URL}}{{APP_VERSION}}"
+							],
+							"path": [
+								"products",
+								"998"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Delete User",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"is_active\":false\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{APP_URL}}{{APP_VERSION}}/users/998",
+									"host": [
+										"{{APP_URL}}{{APP_VERSION}}"
+									],
+									"path": [
+										"users",
+										"998"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.27.3"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.3.14"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 21 Dec 2024 17:43:51 GMT"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"User deleted successfully\",\n    \"data\": []\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "login",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"const response = pm.response.json();\r",
+									"\r",
+									"if (response.success && response.data && response.data.token) {\r",
+									"    pm.environment.set(\"AUTH_TOKEN\", response.data.token);\r",
+									"}"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\":\"test.user2\",\r\n    \"password\":\"test1234\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{APP_URL}}{{APP_VERSION}}/login",
+							"host": [
+								"{{APP_URL}}{{APP_VERSION}}"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "logout",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"const response = pm.response.json();\r",
+									"\r",
+									"if (response.success) {\r",
+									"    pm.environment.set(\"AUTH_TOKEN\", null);\r",
+									"}"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{APP_URL}}{{APP_VERSION}}/logout",
+							"host": [
+								"{{APP_URL}}{{APP_VERSION}}"
+							],
+							"path": [
+								"logout"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "{{AUTH_TOKEN}}",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					"pm.request.headers.add({\r",
+					"    key: \"Accept\",\r",
+					"    value: \"application/json\"\r",
+					"});\r",
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
